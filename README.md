@@ -5,8 +5,8 @@ Docker Xampp with PHP, Apache, Mariadb and phpMyAdmin to work with MVC projects,
 
 ### Database
 Put the .sql file in the dump directory to insert into the container.
-Default database user: `root`
-Default database password: `root`
+- Default database user: `root`
+- Default database password: `root`
 
 ### Generate vendor
 To generate the vendor folder you will need to have composer installed and inside the www/ directory run the command: `composer install` 
