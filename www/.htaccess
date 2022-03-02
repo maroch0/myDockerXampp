@@ -1,0 +1,14 @@
+# Activate Dockerfile rewrite module (a2enmod rewrite)
+RewriteEngine On
+# Indicate the path where the index.php is to be read by apache
+DirectoryIndex public/index.php
+# add a slash at the end of the route to be able to concatenate other routes
+RewriteBase /
+# If the requested filename is no real directory, this condition is true
+RewriteCond %{REQUEST_FILENAME} !-d
+# If the requested filename is no real file on the harddisk, this condition is true
+RewriteCond %{REQUEST_FILENAME} !-f
+# ONLY if these conditions are true, this rule applies
+# This sets how the rewrite is defined
+# and that any query string defined in the rewrite target will be appended to any query string in the original URL
+RewriteRule ^(.+)$ public/index.php [QSA,L]
