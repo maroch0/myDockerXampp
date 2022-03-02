@@ -2,7 +2,7 @@
     "name": "my-app/mvc-twig",
     "autoload": {
         "psr-4": {
-            "App\\" : "www/"
+            "App\\" : "src/"
         }
     },
     "require": {

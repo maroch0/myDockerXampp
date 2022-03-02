@@ -11,6 +11,9 @@ Put the .sql file in the dump directory to insert into the container.
 ### Generate vendor
 To generate the vendor folder you will need to have composer installed and inside the www/ directory run the command: `composer install` 
 
+### Generate src/
+Inside the www/ directory generate a folder src/ and add to this controllers, entity, repositories and core.
+
 ### Run the container
 To run the container use:
     `docker-compose up --build`
