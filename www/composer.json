@@ -1,0 +1,14 @@
+{
+    "name": "my-app/mvc-twig",
+    "autoload": {
+        "psr-4": {
+            "App\\" : "www/"
+        }
+    },
+    "require": {
+        "doctrine/orm": "^2.10",
+        "twig/twig": "^3.3",
+        "symfony/cache": "^5.3",
+        "doctrine/annotations": "^1.13"
+    }
+}
